@@ -1,0 +1,36 @@
+body {
+    padding: 10px;
+    background: black;
+    color: white;
+    font-weight: 100;
+}
+
+h1, h2 {
+    font-weight: 100;
+}
+
+#recordButton {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#recordButton svg {
+    width: 65px;
+    cursor: pointer;
+}
+
+#recordButton svg * {
+    stroke: white;
+}
+
+img {
+    width: 80%;
+    margin: 10px 10% 50px;
+}
+
+hr {
+    opacity: .5;
+    margin-block-end: 10px;
+}

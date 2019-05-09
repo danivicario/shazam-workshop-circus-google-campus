@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Song Identifier</title>
+</head>
+
+<body>
+  <h1>Music Identifier</h1>
+
+  <div id="controls">
+    <button id="recordButton">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+        <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="32" r="31" />
+        <rect x="21" y="21" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="22"
+          height="22" />
+      </svg>
+    </button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recorderjs/0.1.0/recorder.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="js/uploadToCloudIdentifier.js"></script>
+  <script src="js/RecorderManager.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
