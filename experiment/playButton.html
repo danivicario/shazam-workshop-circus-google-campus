@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>playButton experiment (svg)</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        body {
+            line-height: 1
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        blockquote,
+        q {
+            quotes: none
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: "";
+            content: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        #wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container {
+            display: flex;
+            height: 400px;
+            width: 400px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container #play {
+            display: none;
+            transition: transform 0.5s;
+            width: 64px;
+            height: 64px;
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        #canvas {
+            position: absolute;
+            z-index: 1;
+            height: 400px;
+            width: 400px;
+        }
+
+        .circle {
+            border-radius: 50%;
+            position: absolute;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./music_pause_button.png" alt="" style="display: none;">
+
+    <div id="wrapper">
+        <div id='container'>
+            <img src="./music_play_button.png" alt="" id="play">
+            <div class="c0 circle"></div>
+            <div class="c1 circle"></div>
+            <div class="c2 circle"></div>
+        </div>
+    </div>
+
+
+    <script src="./playButton.js"></script>
+</body>
+
+</html>
