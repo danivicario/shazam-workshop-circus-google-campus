@@ -2,15 +2,25 @@ body {
     color: white;
     font-weight: 100;
     height: 100vh;
-    width: 300vw;
-    overflow: hidden;
+    width: 100vw;
     text-align: center;
 }
 
+
 section {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(#13406d, #000);
+    opacity: 0;
+    transition: opacity 1.5s;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.index {
+    opacity: 1;
 }
 
 .index h1 {
@@ -19,13 +29,12 @@ section {
 
 .index  .slider {
     display: flex;
-    width: 120vh;
-    transform: translateX(-20vw)
+    transform: translateX(-20vw);
+    flex-direction: row;
 }
 
 .index  .slider img {
     margin: 10px;
-    width: 150px;
     height: 150px;
 }
 
@@ -57,7 +66,9 @@ section {
 }
 
 #listeningSVG {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    background: linear-gradient(#13406d, #000);
+    border-radius: 50%;
 }
 
 .result hr {
@@ -70,4 +81,46 @@ section {
     display: block;
     margin: 0 auto 200px;
     transform: translateY(40px)
+}
+
+.button-wrapper {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button-wrapper .circle {
+    transition: all 0.5s;
+    border-radius: 50%;
+    position: absolute;
+    opacity: .5;
+
+}
+
+.button-wrapper #listeningSVG {
+    z-index: 40;
+} 
+
+.button-wrapper .c1 {
+    background-color: #42617d;
+    height: 150px;
+    width: 150px;
+    z-index: 30;
+}
+
+.button-wrapper .c2 {
+    background-color: #123f65;
+    height: 180px;
+    width: 180px;
+    z-index: 20;
+}
+
+.button-wrapper .c3 {
+    background-color: #1b5e97;
+    height: 200px;
+    width: 200px;
+    z-index: 10;
 }

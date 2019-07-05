@@ -1,9 +1,31 @@
+function changeSection(section) {
+  var sectionNames = [".index", ".listening", ".result"]
+  document.querySelector(sectionNames[section]).style.opacity = 1;
+
+  document.querySelector('.index').style.zIndex = 5
+  document.querySelector('.listening').style.zIndex = 5
+  document.querySelector('.result').style.zIndex = 5
+
+
+  document.querySelector(sectionNames[section]).style.zIndex = 11
+}
+
+changeSection(0)
 
 const recorder = RecorderManager.create()
 
 recordButton.disabled = false
 
 recordButton.onclick = () => {
+
+  changeSection(1)
+
+  setInterval(function () {
+    var randomFactor = Math.random() * 2
+    document.querySelector(".c1").style.transform = `scale(${randomFactor})`
+    document.querySelector(".c2").style.transform = `scale(${randomFactor + 0.3})`
+    document.querySelector(".c3").style.transform = `scale(${randomFactor + 0.6})`
+  }, 800)
 
   recorder
     .start()
@@ -24,6 +46,8 @@ recordButton.onclick = () => {
         return uploadToCloudIdentifier(blob)
       })
       .then(data => {
+        changeSection(2)
+        document.querySelector("#track").innerHTML = data.identify
         console.log(`Identified Song -> "${data.identify}"`)
       })
       .catch(e => console.log('Error:', e))
