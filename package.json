@@ -1,0 +1,21 @@
+{
+  "name": "identifier-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node_modules/http-server/bin/http-server . -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/prussian-blue/shazam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/prussian-blue/shazam#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

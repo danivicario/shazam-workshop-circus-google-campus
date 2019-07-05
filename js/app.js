@@ -1,3 +1,5 @@
+let intervalID
+
 function changeSection(section) {
   var sectionNames = [".index", ".listening", ".result"]
   document.querySelector(sectionNames[section]).style.opacity = 1;
@@ -10,7 +12,12 @@ function changeSection(section) {
   document.querySelector(sectionNames[section]).style.zIndex = 11
 }
 
+document.querySelector("#explore-other").onclick = function () {
+  changeSection(0)
+}
+
 changeSection(0)
+// document.querySelector("#track").innerHTML = "data.identify"
 
 const recorder = RecorderManager.create()
 
@@ -20,7 +27,7 @@ recordButton.onclick = () => {
 
   changeSection(1)
 
-  setInterval(function () {
+  intervalID = setInterval(function () {
     var randomFactor = Math.random() * 2
     document.querySelector(".c1").style.transform = `scale(${randomFactor})`
     document.querySelector(".c2").style.transform = `scale(${randomFactor + 0.3})`
@@ -49,6 +56,10 @@ recordButton.onclick = () => {
         changeSection(2)
         document.querySelector("#track").innerHTML = data.identify
         console.log(`Identified Song -> "${data.identify}"`)
+
+        setTimeout(() => {
+          clearInterval(intervalID)
+        })
       })
       .catch(e => console.log('Error:', e))
   }, 7000)
