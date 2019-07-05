@@ -4,6 +4,9 @@ body {
     height: 100vh;
     width: 100vw;
     text-align: center;
+    font-family: neuzeit-grotesk-extra-conden, sans-serif;
+    font-style: normal;
+    font-weight: 900;
 }
 
 
@@ -27,13 +30,13 @@ section {
     margin-top: 80px;
 }
 
-.index  .slider {
+.index .slider {
     display: flex;
     transform: translateX(-20vw);
     flex-direction: row;
 }
 
-.index  .slider img {
+.index .slider img {
     margin: 10px;
     height: 150px;
 }
@@ -54,14 +57,19 @@ section {
 #recordButton {
     text-align: center;
     margin-top: 60px;
+    box-shadow: inset 0 0 0 15px rgba(100, 100, 100, .25);
+    border-radius: 50%;
+    padding: 10px;
 }
 
-#recordButton svg, #listeningSVG {
+#recordButton svg,
+#listeningSVG {
     width: 65px;
     cursor: pointer;
 }
 
-#recordButton svg *, #listeningSVG * {
+#recordButton svg *,
+#listeningSVG * {
     stroke: white;
 }
 
@@ -102,7 +110,7 @@ section {
 
 .button-wrapper #listeningSVG {
     z-index: 40;
-} 
+}
 
 .button-wrapper .c1 {
     background-color: #42617d;
