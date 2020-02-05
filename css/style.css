@@ -5,18 +5,24 @@
 body {
     color: white;
     font-weight: 100;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     text-align: center;
-    font-family: "Myriad Pro";
+    font-family: 'Lato', sans-serif;
     font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper, section {
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
 }
 
 section {
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(#13406d, #000);
+    background: linear-gradient(#00B4FF, #003CBE);
     opacity: 0;
     transition: opacity 1.5s;
     position: absolute;
@@ -24,7 +30,8 @@ section {
     z-index: 10;
 }
 
-.index {
+section.visible {
+    z-index: 100;
     opacity: 1;
 }
 
@@ -43,7 +50,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h2 {
@@ -53,26 +60,28 @@ h2 {
 .telephone {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 5px;
-    height: 20px;
+    margin-bottom: 25px;
+    padding: 15px;
 }
 
-.index h1 {
-    margin-top: 80px;
+.telephone img {
+    height: 12px;
 }
 
 .index .slider {
     display: flex;
-    transform: translateX(-20vw);
-    flex-direction: row;
-    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .index .slider img {
-    margin: 10px;
+    margin: 17.5px;
     margin-top: 0;
     height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
 }
 
 
@@ -80,7 +89,8 @@ h2 {
     font-size: 1.2em;
     text-align: center;
     line-height: 1.4em;
-    margin-top: 40px;
+    margin: 40px 20px;
+    margin-bottom: 50px;
 }
 
 
@@ -91,10 +101,10 @@ h2 {
 
 #recordButton {
     text-align: center;
-    margin-top: 60px;
     box-shadow: inset 0 0 0 15px rgba(100, 100, 100, .25);
     border-radius: 50%;
     padding: 10px;
+    height: 143px;
 }
 
 #recordButton svg,
@@ -110,13 +120,20 @@ h2 {
 
 #listeningSVG {
     /* margin-top: 100px; */
-    background: linear-gradient(#13406d, #000);
+    background: linear-gradient(#E5E5E5, #E5E5E5);
     border-radius: 50%;
+    height: 90px;
+    width: 90px;
 }
 
 .result h2 {
-    margin-bottom: 10px;
-    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.result h3 {
+    font-size: 20px;
+    margin-bottom: 23px;
 }
 
 .result hr {
@@ -132,7 +149,7 @@ h2 {
     width: 80%;
     display: block;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
 }
 
 .result header {
@@ -176,22 +193,15 @@ h2 {
 }
 
 .button-wrapper .c1 {
-    background-color: #42617d;
+    background-color: rgba(249, 249, 249, .2);
     height: 150px;
     width: 150px;
     z-index: 30;
 }
 
 .button-wrapper .c2 {
-    background-color: #123f65;
+    background-color: rgba(249, 249, 249, .05);
     height: 180px;
     width: 180px;
     z-index: 20;
-}
-
-.button-wrapper .c3 {
-    background-color: #1b5e97;
-    height: 200px;
-    width: 200px;
-    z-index: 10;
 }
