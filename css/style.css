@@ -35,11 +35,6 @@ section.visible {
     opacity: 1;
 }
 
-.button {
-    height: 68px;
-    width: 68px;
-}
-
 a {
     color: white;
     text-decoration: none;
