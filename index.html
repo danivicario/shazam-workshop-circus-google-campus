@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Listening</title>
-  </head>
 
-  <body>
-    <div class="main-wrapper">
-      <section class="index visible">
-        <div class="telephone">
-          <span>9.41</span>
-          <img src="./img/telephone-right.png" alt="" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Listening</title>
+</head>
 
-        <div class="slider">
-          <img src="img/artist1.jpg" alt="Disco" />
-          <img src="img/artist2.jpg" alt="Disco" />
-          <img src="img/artist3.jpg" alt="Disco" />
-        </div>
+<body>
+  <div class="main-wrapper">
+    <section class="index visible">
+      <div class="telephone">
+        <span>9.41</span>
+        <img src="./img/telephone-right.png" alt="" />
+      </div>
 
-        <h1>¿Qué canción suena?</h1>
+      <div class="slider">
+        <img src="img/artist1.jpg" alt="Disco" />
+        <img src="img/artist2.jpg" alt="Disco" />
+        <img src="img/artist3.jpg" alt="Disco" />
+      </div>
 
-        <p>Solo debes presionar el botón para saber que canción suena.</p>
+      <h1>¿Qué canción suena?</h1>
 
-        <div id="controls">
-          <img src="./img/microphone.png" alt="" id="recordButton" />
-        </div>
-      </section>
+      <p>Solo debes presionar el botón para saber que canción suena.</p>
 
-      <section class="listening">
-        <div class="telephone">
-          <span>9.41</span>
-          <img src="./img/telephone-right.png" alt="" />
-        </div>
-        <header>
-          <a href="#"> &lt; Explorar otra</a>
-          <img src="img/export.png" alt="" class="export" />
-        </header>
+      <div id="controls">
+        <img src="./img/microphone.png" alt="" id="recordButton" />
+      </div>
+    </section>
 
-        <h1>Explorando...</h1>
+    <section class="listening">
+      <div class="telephone">
+        <span>9.41</span>
+        <img src="./img/telephone-right.png" alt="" />
+      </div>
+      <header>
+        <a href="#"> &lt; Explorar otra</a>
+        <img src="img/export.png" alt="" class="export" />
+      </header>
 
-        <div class="button-wrapper">
-          <img src="./img/microphone.png" alt="" id="listeningSVG" />
-          <div class="circle c1"></div>
-          <div class="circle c2"></div>
-        </div>
-      </section>
+      <h1>Explorando...</h1>
 
-      <section class="result">
-        <div class="telephone">
-          <span>9.41</span>
-          <img src="./img/telephone-right.png" alt="" />
-        </div>
-        <header>
-          <a href="#" id="explore-other"> &lt; Explorar otra</a>
-          <img src="img/export.png" alt="" class="export" />
-        </header>
+      <div class="button-wrapper">
+        <img src="./img/microphone.png" alt="" id="listeningSVG" />
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+      </div>
+    </section>
 
-        <img src="img/logo.png" alt="Logotipo" class="song-logo" />
+    <section class="result">
+      <div class="telephone">
+        <span>9.41</span>
+        <img src="./img/telephone-right.png" alt="" />
+      </div>
+      <header>
+        <a href="#" id="explore-other"> &lt; Explorar otra</a>
+        <img src="img/export.png" alt="" class="export" />
+      </header>
 
-        <div class="match">
-          <h2>Sunset Lover</h2>
-          <h3>Petit Biscuit · Presence</h3>
-          <p id="track"></p>
-        </div>
+      <img src="img/logo.png" alt="Logotipo" class="song-logo" />
 
-        <img src="img/play.png" alt="play" class="button" />
-      </section>
-    </div>
+      <div class="match">
+        <h2>Sunset Lover</h2>
+        <h3>Petit Biscuit · Presence</h3>
+        <p id="track"></p>
+      </div>
 
-    <!-- <script src="js/recorder.js"></script>
-    <script src="js/axios.min.js"></script>
-    <script src="js/uploadToCloudIdentifier.js"></script>
-    <script src="js/RecorderManager.js"></script>
-    <script src="js/app_microinteractions.js"></script> -->
+      <img src="img/play.png" alt="play" class="button" />
+    </section>
+  </div>
 
-    <script src="js/app_basic.js"></script>
-  </body>
+  <script src="js/recorder.js"></script>
+  <script src="js/axios.min.js"></script>
+  <script src="js/uploadToCloudIdentifier.js"></script>
+  <script src="js/RecorderManager.js"></script>
+  <script src="js/app_microinteractions.js"></script>
+
+  <script src="js/app_basic.js"></script>
+</body>
+
 </html>
